@@ -1,0 +1,124 @@
+
+Todays Summary
+============
+
+Halakart
+--------
+- Same as before
+
+Shiphandling
+------------
+- Same as before. Other than that helped naeem to run SP
+
+Scraping
+--------
+- It is decided that we need to have subcategories, so I have modified and re-run the script to get the subcategories as well. I have created the subcategories manually for groceries but medicine have a lot of subcats so I will need to make a script to create subcats in opencart.
+
+CanadianTaxExperts
+--------
+- Same as before. 
+
+
+
+shopify_meta_title
+model space character
+
+oc_product
+	constants
+		model = ""
+		quantity = 1
+		stock_status_id = 6
+		shipping = 1
+		weight_class_id = 1
+		status = 1
+	variables
+		image   // catalog/bulk/xyz.
+		price
+		weight
+oc_product_description
+	constants
+		language_id = 1
+		
+	variables
+		name
+		meta_title = name
+		description
+		
+oc_product_to_category
+	variables
+		product_id
+		category_id
+
+oc_product_to_layout
+	constants
+		store_id = 0
+		layout_id = 0
+	variables
+		product_id
+
+-------- Enter New Category
+oc_category (75 rows)
+	constants
+		parent_id = 96
+		status = 1
+		top = 0
+		column = 1
+		
+oc_category_description (75 rows)
+	variables
+		category_id
+		name 
+		meta_title = name
+	constants
+		langueage_id = 1
+
+oc_category_path(140 rows)
+
+oc_category_to_layout
+oc_category_to_store
+
+
+
+Dvago
+Cardio-Vascular System
+Central Nervous System
+Circulatory System
+Derma
+Endocrine System
+Eyes, Nose, Ear
+Gastro-Intestinal Tract
+
+
+HKarimBuksh
+Grocery Items  >  Aata & Other Flours	0	
+	Grocery Items  >  Confectionary	0	
+	Grocery Items  >  Cooking Oils	0	
+	Grocery Items  >  Dry Fruits	0	
+	Grocery Items  >  Grocery Items (Other)	0	
+	Grocery Items  >  Pulses	0	
+	Grocery Items  >  Salt & Sugar
+	Grocery Items  >  Spices
+	
+	Grocery Items  >  Beverages > 145
+	Grocery Items  >  Breads & Bakery > 146
+	Grocery Items  >  Breakfast Foods > 147
+	Grocery Items  >  Candy & Chocolate > 148
+	Grocery Items  >  Pantry Foods > 149
+	Grocery Items  >  Cooking & Baking > 150
+	Grocery Items  >  Dairy, Cheese & Eggs > 151
+	Grocery Items  >  Jams & Honey > 152
+	Grocery Items  >  Sauces & Candiments > 153
+	Grocery Items  >  Dried Beans, Grains & Rice > 154
+	Grocery Items  >  Farm Fresh Fruits, Vegetables & Herbs > 155
+	Grocery Items  >  Frozen > 156
+	Grocery Items  >  Baby > 157
+	Grocery Items  >  Dry Herbs & Spices > 158
+	Grocery Items  >  Meat, Poultry & Sea Food > 159
+	Grocery Items  >  Snack Foods > 160
+	Grocery Items  >  Baby Foods > 161
+	Grocery Items  >  Household > 162
+	Grocery Items  >  Pets > 163
+	
+	
+	
+	
